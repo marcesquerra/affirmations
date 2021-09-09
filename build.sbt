@@ -9,4 +9,8 @@ lazy val root = project
 
     scalaVersion := scala3Version,
     nativeImageAgentMerge := true,
+
+    libraryDependencies ++= Seq(
+      "info.picocli" % "picocli" % "4.6.1"
+    )
   )
